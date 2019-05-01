@@ -1,0 +1,18 @@
+﻿  pch.cpp
+  autoRegisterFactory.cpp
+e:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2539): error C2664: “message1::message1(message1 &&)”: 无法将参数 1 从“std::tuple<int>”转换为“int”
+  e:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+  c:\users\zhangchuan\source\repos\c++test\day01\autoregisterfactory\autoregisterfactory\autoregisterfactory.cpp(52): note: 参见对正在编译的函数 模板 实例化“std::unique_ptr<t,std::default_delete<_Ty>> std::make_unique<t,std::tuple<int>&,0>(std::tuple<int> &)”的引用
+          with
+          [
+              t=message1,
+              _Ty=message1
+          ]
+  c:\users\zhangchuan\source\repos\c++test\day01\autoregisterfactory\autoregisterfactory\autoregisterfactory.cpp(62): note: 参见对正在编译的函数 模板 实例化“std::unique_ptr<t,std::default_delete<_Ty>> create<t,int>(std::tuple<int>)”的引用
+          with
+          [
+              t=message1,
+              _Ty=message1
+          ]
+  c:\users\zhangchuan\source\repos\c++test\day01\autoregisterfactory\autoregisterfactory\autoregisterfactory.cpp(62): note: 编译 类 模板 静态数据成员 "bool AutoRegisterFactory<message1,int>::register1" 时
+  c:\users\zhangchuan\source\repos\c++test\day01\autoregisterfactory\autoregisterfactory\autoregisterfactory.cpp(77): note: 参见对正在编译的 类 模板 实例化 "AutoRegisterFactory<message1,int>" 的引用
